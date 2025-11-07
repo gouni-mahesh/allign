@@ -1,0 +1,24 @@
+.home-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+}
