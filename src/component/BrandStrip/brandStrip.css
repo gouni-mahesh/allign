@@ -1,0 +1,64 @@
+/* Container */
+.brand-strip {
+  background-color: #fbfcff;        /* subtle off-white, like the screenshot */
+  padding: 28px 20px;               /* vertical space around the logos */
+  border-top: 1px solid #eef0f5;    /* optional soft separators */
+  border-bottom: 1px solid #eef0f5;
+}
+
+/* Row */
+.brand-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;                  /* wrap on smaller screens */
+}
+
+/* Each brand (text fallback styled like light logos) */
+.brand-item {
+  color: #d7dbe2;                   /* light grey to match the faded logos */
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;                 /* stronger for logo-like feel */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 28px;                  /* adjust to match your design */
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  opacity: 0.9;                     /* slight fade */
+}
+
+/* If you switch to images, use this class */
+.brand-logo {
+  height: 28px;                     /* tweak to match scale */
+  width: auto;
+  filter: grayscale(100%) opacity(0.4); /* desaturate + fade like screenshot */
+  display: block;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .brand-row {
+    gap: 32px;
+    justify-content: center;
+  }
+  .brand-item {
+    font-size: 24px;
+  }
+  .brand-logo {
+    height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-item {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+  .brand-logo {
+    height: 20px;
+  }
+}
