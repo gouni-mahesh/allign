@@ -1,0 +1,111 @@
+/* === HERO SECTION BASE === */
+.hero-section {
+  background-color: #f8faff;
+  padding: 80px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+/* === LEFT CONTENT === */
+.hero-content {
+  flex: 1;
+}
+
+.hero-tagline {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2970ff;
+  background-color: #eaf1ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0d102b;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-blue {
+  color: #2970ff;
+}
+
+.hero-description {
+  font-size: 15px;
+  color: #333333;
+  max-width: 460px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #2970ff;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.hero-button:hover {
+  background-color: #1f56d6;
+}
+
+/* === RIGHT SIDE IMAGE === */
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* decorative circular border behind the image */
+.hero-accent-circle {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border: 6px solid #8a3ffc;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 40px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+}
