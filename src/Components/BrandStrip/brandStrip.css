@@ -20,7 +20,6 @@
 /* Each brand (text fallback styled like light logos) */
 .brand-item {
   color: #d7dbe2;                   /* light grey to match the faded logos */
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-weight: 700;                 /* stronger for logo-like feel */
   letter-spacing: 2px;
   text-transform: uppercase;

@@ -1,0 +1,146 @@
+/* Container and Overall Layout */
+.blogs-insights-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
+    /* Dark background color */
+}
+
+/* --- Header Styling --- */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    /* Title text is white on dark background */
+}
+
+.view-more-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+    background-color: #357ae8;
+}
+
+/* --- Blog Cards Container --- */
+.blog-cards-container {
+    display: flex;
+    gap: 30px;
+    padding: 0 10px;
+}
+
+/* --- Individual Blog Card Styling --- */
+.blog-card {
+    flex: 1;
+    background-color: white;
+    /* Card background is still white */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image-container {
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+    /* --- KEY CHANGE: Ensure all block-level text starts from the left --- */
+    text-align: left;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+    /* Ensure meta text is also left-aligned */
+    justify-content: flex-start;
+}
+
+.blog-category {
+    font-weight: normal;
+    color: #666;
+}
+
+.blog-read-time {
+    /* Simple text */
+}
+
+.blog-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.blog-excerpt {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.read-more-link {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+    color: #357ae8;
+}
+
+/* --- Responsiveness (for smaller screens) --- */
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .blog-cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

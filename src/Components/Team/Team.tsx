@@ -1,9 +1,9 @@
 import React from "react";
 import "./team.css";
-import TeamMember1 from '../assest/images/5e01b147c7c7c07bd15440ec3796ec3113150e5d.png'
-import Img2 from '../assest/images/Img 2.png';
-import Img4 from '../assest/images/Img 4.png';
-import Img3 from '../assest/images/Img 3.png';
+// import TeamMember1 from '../../assest/images/5e01b147c7c7c07bd15440ec3796ec3113150e5d.png'
+// import Img2 from '../assest/images/Img 2.png';
+// import Img4 from '../assest/images/Img 4.png';
+// import Img3 from '../assest/images/Img 3.png';
 
 
 
@@ -15,7 +15,7 @@ type TeamProps = {
 const Team: React.FC<TeamProps> = () => {
   return (
     <div className="heroSection10">
-      <div className="frameParent">
+      {/* <div className="frameParent">
         <div className="button2Parent">
           <div className="button2">
             <div className="designingForThe">DESIGNING FOR THE FUTURE</div>
@@ -64,7 +64,7 @@ const Team: React.FC<TeamProps> = () => {
         </div>
       </div>
 
-      <div className="buttunIcon" />
+      <div className="buttunIcon" /> */}
     </div>
   );
 };

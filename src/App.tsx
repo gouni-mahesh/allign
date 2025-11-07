@@ -1,19 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import Home from './component/Home/Home';
-import Header from './component/Header/Header';
-import BrandStrip from './component/BrandStrip/BrandStrip';
-import HomePage from './component/HomePage/HomePage';
+import Home from './Components/Home/Home';
+import Header from './Components/Header/Header';
+import BrandStrip from './Components/BrandStrip/BrandStrip';
+import HomePage from './Components/HomePage/HomePage';
 
-import Team from './component/Team/Team';
+import Team from './Components/Team/Team';
+import SecuirtyStep from './Components/SecurityStep/SecuirtyStep';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
         <Route path="/header" element={<Header />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+        <Route path="/secure" element={<SecuirtyStep />} />
           <Route path="/brandstrip" element={<BrandStrip />} />
           <Route path="/homepage" element={<HomePage />} />
         <Route path="/team" element={<Team />} />

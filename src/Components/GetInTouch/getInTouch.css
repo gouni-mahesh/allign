@@ -1,0 +1,279 @@
+/* 🌐 Color Variables based on Blog & Insights image */
+:root {
+    --primary-blue: #4285f4;
+    /* Buttons and tags */
+    --dark-background-blue: #0056b3;
+    /* Darker blue background */
+    --section-background: #222;
+    /* Outer dark section */
+    --form-card-background: #fcfcfc;
+    /* Off-white card */
+    --card-overlap-blue: #106be0;
+    /* Lighter blue overlap */
+    --dark-text: #333333;
+    /* Dark text color */
+}
+
+/* 🧱 Overall Section Container */
+.get-in-touch-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: var(--form-card-background);
+}
+
+/* 🔷 Blue Background Shape (Decorative) */
+.blue-background-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-background-blue);
+    clip-path: polygon(0 0, 80% 0, 70% 100%, 0% 100%);
+    z-index: 1;
+}
+
+/* 📢 Left Promotional Content Area */
+.left-promo-content {
+    flex: 1;
+    padding: 80px 40px 80px 100px;
+    color: white;
+    z-index: 2;
+    max-width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* ✅ Align content to the left */
+    text-align: left;
+    /* ✅ Ensure all text starts from left */
+    justify-content: flex-start;
+    /* ✅ Keep content at the top */
+}
+
+
+.promo-tag {
+    background-color: var(--form-card-background);
+    color: black;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.promo-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 25px 0;
+}
+
+.promo-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.promo-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.feature-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.checkmark {
+    font-size: 24px;
+    color: #a8dadc;
+    font-weight: bold;
+}
+
+.get-started-button {
+    background-color: white;
+    color: var(--primary-blue);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* 📨 Right Contact Form Card */
+.right-contact-form-card {
+    flex: 0 0 450px;
+    color: white;
+    background-color: var(--form-card-background);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-left: -50px;
+    z-index: 3;
+    position: relative;
+    align-self: center;
+    height: fit-content;
+}
+
+.contact-us-button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-button:hover {
+    background-color: #357ae8;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+.form-description {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+    width: calc(50% - 10px);
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--dark-text);
+}
+
+.form-textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-now-button {
+    width: 100%;
+    background-color: var(--dark-text);
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-now-button:hover {
+    background-color: #555;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .get-in-touch-section-container {
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--dark-background-blue);
+    }
+
+    .blue-background-shape {
+        clip-path: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-promo-content {
+        max-width: 100%;
+        padding: 60px 30px 30px 30px;
+        text-align: center;
+    }
+
+    .promo-title,
+    .promo-description {
+        text-align: center;
+    }
+
+    .promo-features {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .feature-group {
+        align-items: center;
+    }
+
+    .feature-item {
+        justify-content: center;
+    }
+
+    .right-contact-form-card {
+        flex: none;
+        width: 90%;
+        max-width: 500px;
+        margin: 30px auto 0 auto;
+        padding: 30px;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 100%;
+    }
+}

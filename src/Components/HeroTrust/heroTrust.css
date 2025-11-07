@@ -1,0 +1,232 @@
+/* Section base */
+.trust-hero {
+  background-color: #ffffff;
+  padding: 70px 7%;
+}
+
+.trust-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+/* ============ LEFT ============ */
+.trust-left {
+  position: relative;
+  min-height: 420px;
+}
+
+.trust-photo-card {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #f3f5fb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.trust-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* triangle play */
+.triangle-play {
+  position: absolute;
+  right: 18%;
+  top: 32%;
+  width: 0;
+  height: 0;
+  border-left: 54px solid #f2b61d;   /* yellow */
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.15));
+}
+
+/* floating stat badges */
+.badge {
+  position: absolute;
+  background: #ffffff;
+  color: #111827;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  min-width: 74px;
+  text-align: center;
+}
+
+.badge-top {
+  right: 18%;
+  top: 10%;
+}
+
+.badge-bottom {
+  left: 22%;
+  bottom: 10%;
+}
+
+/* decorations */
+.scribble {
+  position: absolute;
+  left: -24px;
+  top: 8%;
+  width: 90px;
+  height: 24px;
+  border: 2px solid #2970ff;
+  border-color: #2970ff transparent transparent transparent;
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  opacity: 0.7;
+}
+
+.cube {
+  position: absolute;
+  left: 18px;
+  bottom: 8%;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(145deg, #f3c4ff, #e2a8ff);
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(143, 0, 255, 0.25);
+}
+
+/* ============ RIGHT ============ */
+.trust-right .pill {
+  display: inline-block;
+  background: #2970ff;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.trust-title {
+  font-size: 42px;
+  line-height: 1.25;
+  color: #0b0f1a;
+  margin: 8px 0 14px;
+}
+
+.trust-title .bold {
+  font-weight: 800;
+}
+
+.trust-sub {
+  color: #4b5563;
+  max-width: 560px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* features */
+.trust-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+  margin: 18px 0 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.feature-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #eaf1ff;
+  display: grid;
+  place-items: center;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0b0f1a;
+  margin-bottom: 4px;
+}
+
+.feature-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* soft pills */
+.trust-pills {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.soft-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4f6fb;
+  color: #0b0f1a;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.04) inset;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-yellow { background: #f2b61d; }
+.dot-blue { background: #2970ff; }
+
+/* CTA */
+.cta-primary {
+  background: #2970ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(41, 112, 255, 0.25);
+  transition: transform 0.08s ease, background 0.2s ease;
+}
+
+.cta-primary:hover {
+  background: #1f56d6;
+  transform: translateY(-1px);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1100px) {
+  .trust-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .trust-left {
+    order: 2;
+  }
+  .trust-right {
+    order: 1;
+  }
+  .trust-title {
+    font-size: 36px;
+  }
+}
