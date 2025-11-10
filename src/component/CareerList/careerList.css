@@ -1,0 +1,81 @@
+.career-container {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.career-badge {
+  background: #e8efff;
+  color: #3366ff;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: default;
+}
+
+.career-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.career-card {
+  background: #faf7ff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: grid;
+  border: 1px solid #f0eded;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.job-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.job-location,
+.job-type {
+  color: #000000;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.apply-btn {
+  background: #1e66ff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #0048e0;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .career-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .apply-btn {
+    width: 100px;
+    justify-self: start;
+  }
+}
